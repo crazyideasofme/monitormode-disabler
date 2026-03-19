@@ -3,13 +3,13 @@ a simple tool to disable monitor mode of wireless devices with a simple command 
 @features
 checks if the device actually exist
 checks if the device entered is actually valid
-##instalaton
+## instalaton
 ```bash
 git clone https://github.com/crazyideasofme/monitormode-disabler.git
 cd monitormode-disabler
 chmod +x *
 sudo ./installer.sh
 ```
-##usage
+## usage
 sudo mdis <device>
 eg: sudo mdis wlan0
