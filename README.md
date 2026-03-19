@@ -1,8 +1,8 @@
 # monitormode-disabler
 a simple tool to disable monitor mode of wireless devices with a simple command if it is annoying to type the full commands to change it to manage mode 
 @features
->checks if the device actually exist
->checks if the device entered is actually valid
+checks if the device actually exist
+checks if the device entered is actually valid
 @instalatin
 ```bash
 git clone https://github.com/crazyideasofme/monitormode-disabler.git
