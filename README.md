@@ -11,5 +11,6 @@ chmod +x *
 sudo ./installer.sh
 ```
 ## usage
-"sudo mdis <device>"
+sudo mdis '<device>'
+
 eg: sudo mdis wlan0
