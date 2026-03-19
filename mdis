@@ -1,0 +1,15 @@
+#!/bin/bash
+wl=$1
+if [[ $wl == " " ]]; then
+echo "please provide the device name"
+elif [ ! -d "/sys/class/net/$wl" ]; then
+echo "$1 donot exist"
+elif iwconfig "$wl" 2>&1 | grep -q "Mode:Managed"; then
+    echo "$wl is already in managed mode. Ready to go!"
+
+else
+
+sudo ifconfig $wl down &
+sudo airmon-ng stop $wl &
+sudo ifconfig $wl up && echo "$1 is ready to go "
+fi
